@@ -36,7 +36,10 @@
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="20dp"
-        android:hint="HEIGHT(M)"
+        android:drawableLeft="@drawable/height2"
+        android:hint="HEIGHT(CM)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
         android:textAlignment="center" />
 
     <!-- SetWeight -->
@@ -44,13 +47,16 @@
         android:id="@+id/bmiWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:layout_below="@id/bmiHeight"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="60dp"
         android:layout_marginStart="60dp"
-        android:hint="WEIGHT(KG)"/>
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/weight2"
+        android:hint="WEIGHT(KG)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:textAlignment="center" />
 
     <!-- CalculateButton -->
     <Button
